@@ -1,0 +1,96 @@
+﻿body {
+    background-image: url('Image/dvdbackground.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.navbar {
+    margin-bottom: 50px;
+    border-radius: 0;
+    
+
+}
+    
+/* Remove the jumbotron's default bottom margin */
+.jumbotron {
+    height: 230px;
+    margin-top: 51px;
+    margin-bottom: 35px;
+    background-color: #808080;
+}
+
+#jumb2 {
+    margin-top: -35px;
+    background-color: #fff0f5;
+}
+ 
+/* Add a gray background color and some padding to the footer */
+footer {
+    background-color: #808080;
+    padding: 25px;
+}
+
+.dropdown-menu{
+    background-color: #808080;
+    
+}
+.dropdown-menu li{
+    font-family: 'Times New Roman', cursive;
+    height:30px;
+    color:#808080;
+    opacity: 1;
+}
+
+.dropdown-menu li a:hover{
+    background-color:#808080;
+}
+.panel-body img {
+    width:100%;
+    height:100%;
+
+}
+
+.container-fluid {
+
+}
+
+#formLogin-dropdown{
+    width: 250%;
+    height: 450%;    
+}
+
+#formLogin {
+    height: 100%;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #fff0f5;
+}
+#searchform .inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+#searchform #inner .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+#searchform .right-addon .glyphicon { right: 0px;}
+#searchform .right-addon input { padding-right: 30px; }
+
+.panel-default {
+}
+
+#homelog {
+    font-style: italic;
+    font-weight: bold;
+    font-family: initial;
+}
+
+#jumborest {
+   width: 400px;
+    height: 280px;
+    margin-top: 0px;
+}

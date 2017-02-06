@@ -1,0 +1,38 @@
+﻿body {
+    background-image: url('Image/dvdbackground.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.panel-default {
+opacity: 0.95;
+margin-top:30px;
+}
+.form-group.last { margin-bottom:0px; }
+
+
+
+
+.centered-form .panel{
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+label {
+    font-weight: normal;
+}
+
+.form-group{
+    padding-top: 5px;
+}
+#pass{
+    padding-top: 0px;
+    margin-top: -10px;
+
+}
+
+#sign {
+    margin-top: -10px;
+}
+

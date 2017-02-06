@@ -1,0 +1,94 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CommonPage.master.cs" Inherits="DvdShop.CommonPage1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="title" runat="server">
+            
+        </asp:ContentPlaceHolder>
+    </title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <script src="../scripts/jquery-1.9.1.min.js"></script>
+    <script src="../scripts/bootstrap.min.js"></script>
+    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Common.css" rel="stylesheet" />
+    <link href="../Content/3-col-portfolio.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            
+            <nav class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" id="homelog" href="UserPage.aspx">Brothers DVD</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="UserPage.aspx">Home</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="#">Movie Category<span class="caret"></span></a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="background: aliceblue;">
+                                    <li><a href="CategoryPage.aspx?category=Bangla">Bangla Movies</a></li>
+                                    <li><a href="CategoryPage.aspx?category=English">English Movies</a></li>
+                                    <li><a href="CategoryPage.aspx?category=Hindi">Hindi Movies</a></li>
+                                    <li><a href="CategoryPage.aspx?category=Animated">Animated Movies</a></li>
+                                    <li><a href="CategoryPage.aspx?category=Comedy">Comedy Movies</a></li>
+                                    <li><a href="CategoryPage.aspx?category=Horror">Horror Movies</a></li>
+                                    <li><a href="CategoryPage.aspx?category=All">All Movies</a></li>
+                                </ul>
+                            </li>
+                            <li><a id="profile" href="" runat="server">Profile</a></li>
+                            <li><a id="request" href="" runat="server">Request</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <div class="navbar-form navbar-left" role="search">
+                                    <div class="form-group" id="searchform">
+                                        <div class="inner-addon right-addon" id="inner">
+                                            <i class="glyphicon glyphicon-search" id="glyphicon"></i>
+                                            <asp:TextBox ID="SearchItem" runat="server" AutoPostBack="True" class="form-control" placeholder="Search" OnTextChanged="SearchItem_TextChanged"></asp:TextBox>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="../Default.aspx">Logout <span class="glyphicon glyphicon-log-out"></span></a>
+                            </li>
+                            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Settings <span class="glyphicon glyphicon-cog"></span></a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="background: aliceblue;">
+                                    <li><a href="RestPasswordPage.aspx">Change password</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="clear"></div>
+            <div class="jumbotron">
+                <div class="container text-center">
+                    <h1 style="color: #222222;">Brothers DVD Shop</h1>
+                    <p style="color: aliceblue;">Entertainment is the aim.</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="jumbotron" id="jumb2" style="height: 100%">
+                <asp:ContentPlaceHolder ID="contentBody" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
